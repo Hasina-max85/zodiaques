@@ -1,0 +1,694 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: url(thumb-1920-979285.png);
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+   /* animation: change 50s ease-in-out infinite;*/
+    transition:opacity .3s ease-in-out;
+
+}/*
+@keyframes change{
+    0%{
+        background: url(000.jpg);
+        background-size: cover;
+    }
+    40%{
+        background: url(cape-arkona-germany-Natural-landscape-wallpaper-1366x768.jpg);
+        background-size: cover;
+    }
+    70%{
+        background: url(02.jpeg);
+        background-size: cover;
+    }
+    100%{
+        background: url(thumb-1920-979285.png);
+        background-size: cover;
+    }
+}*/
+
+header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    align-items: center;
+    z-index: 99;
+    box-shadow: 0 0 10px #0f376b;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow-x: auto;
+
+
+}
+.bienvenue  p{
+top: 250px;
+left: 45%;
+right: 50%;
+position: relative;
+text-transform: uppercase;
+font-style: italic;
+width: 100px;
+-webkit-box-reflect:below 1px linear-gradient(transparent,#0005);
+
+}
+.bienvenue button{
+    width: 200px;
+    height: 50px;
+    background: #03e9f4;
+    box-shadow: 0 0 5px #03e9f4,
+    0 0 25px #03e9f4,
+    0 0 50px #03e9f4,
+    0 0 200px #03e9f4;
+    border-radius: 20px;
+    text-transform: uppercase;
+    font-size: 20px;
+    font: 800;
+    padding: 5px;
+    border: 1px solid green;
+    animation: bouge  3s ease-in-out infinite;
+    animation-delay:10s;
+    animation-duration: 8s;
+
+}
+@keyframes bouge{
+    0%,
+  7% {
+    transform: rotateZ(0);
+  }
+  0%,
+  7% {
+    transform: rotateZ(0);
+  }
+
+  15% {
+    transform: rotateZ(-15deg);
+  }
+
+  20% {
+    transform: rotateZ(10deg);
+  }
+
+  25% {
+    transform: rotateZ(-10deg);
+  }
+
+  30% {
+    transform: rotateZ(6deg);
+  }
+
+  35% {
+    transform: rotateZ(-4deg);
+  }
+
+  40%,100% {
+    transform: rotateZ(0);
+  }
+}
+
+
+
+.bienvenue button:hover{
+    background: linear-gradient(225deg, #27d86c 0%, #26caf8 50%, #c625d8 100%);
+
+    box-shadow:0 0 5px #27d86c ,
+    0 0 25px #27d86c ,
+    0 0 50px #27d86c ,
+    0 0 200x #27d86c ;
+    animation: step-end;
+
+}
+.bienvenue button span:nth-child(1){
+    animation: anima 1s linear infinite;
+    width: 400px;
+    height: 200px;
+    background: red;
+}
+
+   
+@keyframes anima{
+    0%{
+        left: -100%;
+    }
+    100%{
+        left: 100%;
+    }
+}
+
+#chik1 {
+    display: none;
+}
+
+i {
+    color: #fff;
+    cursor: pointer;
+    margin-left: 50px;
+    text-transform: uppercase;
+}
+
+header .search-box {
+    flex: 1;
+    position: relative;
+}
+
+.search-box input {
+    width: 50%;
+    height: 40px;
+    border: none;
+    border-radius: 30px;
+    color: blue;
+    font-size: 10px;
+    text-align: center;
+    outline: none;
+    padding-left: 5px;
+    padding-right: 40px;
+}
+
+header ul {
+    flex: 2;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 15px;
+    margin: 10px
+}
+
+header ul li {
+    list-style: none;
+    text-transform: uppercase;
+    font: 600;
+    font-weight: bold;
+    text-shadow: 4px -1px 2px #0f376b;
+    padding: 20px;
+    padding-top: 0px;
+    overflow: auto;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+
+    font-size: 12px;
+
+}
+
+header ul li a:hover {
+    border-bottom: 4px solid yellow;
+}
+
+.logo h1 {
+    font-size: 10px
+}
+
+header ul li label {
+    position: fixed;
+    position: relative;
+
+}
+
+select {
+
+
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: 2%;
+    height: 50%;
+
+
+
+}
+
+option {
+    background: #27d86c;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    color: aqua;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #0f376b;
+    color: aqua;
+    width: 5px;
+    height: 100px;
+}
+
+div .btn {
+    background: linear-gradient(225deg, #27d86c 0%, #26caf8 50%, #c625d8 100%);
+    border-radius: 30px;
+    transition: opacity .3s ease-in-out;
+    opacity: 1;
+    animation: glowing 20s linear infinite;
+}
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+.belier {
+    background: #26caf8;
+}
+
+.bel {
+    background: rgb(197, 41, 41);
+}
+
+.gem {
+    background: #b39823;
+}
+
+.lio {
+    background: rgb(236, 184, 86);
+}
+
+.bal {
+    background: #e057b7;
+
+}
+
+.sag {
+    background: #4e1455;
+}
+
+.ver {
+    background: rgb(87, 87, 247)
+}
+
+.tau {
+    background: #27d86c;
+}
+
+.can {
+    background: rgb(169, 180, 196);
+}
+
+.vie {
+    background: rgb(82, 3, 3);
+}
+
+.sco {
+    background: rgb(46, 42, 42);
+}
+
+.cap {
+    background: gray;
+}
+
+.poi {
+    background: #57ad78;
+}
+
+.nav-toggler {
+    position: fixed;
+    z-index: 10;
+    left: 0px;
+    height: 50px;
+    top: 103px;
+
+    width: 50px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 120px;
+    background: transparent;
+
+
+}
+
+.line {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: rgb(177, 221, 17);
+    transition: transform 0.3s ease-out, opacity 0.1s ease-out;
+    bottom: 20px;
+}
+
+.l1 {
+    transform: translateY(-10px);
+}
+
+.l3 {
+    transform: translateY(10px);
+}
+
+.nav-toggler.active .l1 {
+    transform: translateY(0px) rotate(135deg);
+}
+
+.nav-toggler.active .l2 {
+    opacity: 0;
+}
+
+.nav-toggler.active .l3 {
+    transform: translateY(0px) rotate(-135deg);
+}
+
+nav {
+    position: fixed;
+    width: 40%;
+    min-height: 50vh;
+    top: 100px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 10px 3px 8px rgb(31, 45, 109);
+    bottom: 0px;
+    display: flex;
+    justify-content: center;
+    background: transparent;
+    align-items: center;
+    flex-direction: column;
+    border-bottom: 1px solid white;
+    transform: translatex(-100%);
+    transition: transform 0.3s cubic-bezier(0.73, 0.11, 0.67, 0.84);
+}
+
+nav::after {}
+
+nav::before {
+    content: "";
+    background: linear-gradient(45deg, #FF0000, #FF7300, #48FF00, #00FFD5, #002BFF, #FF00C8, #FF0000);
+    position: absolute;
+    background-size: 600%;
+    z-index: -1;
+    width: calc(100%+4px);
+    height: calc(100%+4px);
+    filter: blur(8px);
+    transition: opacity;
+    opacity: 1;
+}
+
+nav ul li {
+    list-style-type: none;
+
+}
+
+nav ul li em {
+    color: rgb(33, 199, 69);
+}
+
+nav.active {
+    transform: translate(0);
+
+}
+
+nav a {
+    font-family: Quicksand, sans-serif;
+    color: white;
+    font-size: 30px;
+    display: block;
+    margin: 10px 0;
+    text-decoration: none;
+    padding: 20px;
+
+}
+
+footer .navi {
+    bottom: 20px;
+    width: 320px;
+    height: 90px;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    left: 40%;
+    border-radius: 20px;
+    right: 50%;
+    background: linear-gradient(45deg, #2196f3, #e91e63);
+}
+
+.icon img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    display: flex;
+    
+
+
+}
+
+footer .navi ul {
+    display: flex;
+    list-style-type: none;
+
+
+}
+
+footer .navi ul li {
+
+    text-decoration: none;
+    padding: 25px;
+}
+
+footer .navi ul li a {
+    text-decoration: none;
+}
+
+footer .navi ul li a .text {
+    position: absolute;
+    color: white;
+    transform: translateY(20px);
+    transition: .5s;
+    bottom: 18px;
+    opacity: 0;
+    font-size: 10px;
+
+}
+
+footer .navi ul li:hover a .text {
+    transform: translateY(10px);
+    opacity: 1;
+}
+
+footer .navi ul li a .icon {
+    transition: .5s;
+    position: relative;
+    display: block;
+    z-index: 100;
+}
+
+footer .navi ul li:hover a .icon {
+    transform: translateY(-55px);
+}
+/*.indicator{
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    background:linear-gradient(45deg, #2196f3, #e91e63);
+    border: 6px solid;
+    border-radius: 50%;
+    top: -50%;
+    left:76px;
+    display: flex;
+    transition: .5s;
+}
+.indicator::before{
+    content: "";
+    position: absolute;
+    height: 20px;
+    left: -22px;
+    background: yellowgreen;
+    border-top-right-radius: 20px;
+    box-shadow: 1px -10px 0 black;
+}
+footer .navi ul li a .circle{
+    position:absolute;
+    display: flex;
+    width: 65px;
+    height: 65px;
+    background:transparent;
+    top: 22px;
+    border-radius: 50%;
+    border: 1.8px solid #fff;
+    transform: translateY(-58px) scale(0);
+    
+}
+footer .navi ul li.active a .circle{
+    transform: translateY(-58px) scale(1);
+}
+footer .navi ul li:nth-child(1).active~.indicator{
+    transform: translateX(calc(90px *  0));
+}
+footer .navi ul li:nth-child(2).active~.indicator{
+    transform: translateX(90px * 1);
+}*/
+.sidebar{
+    position: fixed;
+    top: 100px;
+    right: 0;
+    width:33.5%;
+    height: 85%;
+  /*  background:linear-gradient(25deg,#e057b7,#b39823,#2196f3,#00FFD5);*/
+    background-repeat: no-repeat;
+    background-size: auto;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 5px 0 20px;
+    border: solid 2px white;
+    animation: change 100s ease-in infinite;
+    transition: opacity .200s ease-in;
+}
+@keyframes change{
+    0%{
+        background: url(aries-7617681_640.jpg);
+        background-size: cover;
+    }
+    10%{
+        background: url(cancer-7617683_640.jpg);
+        background-size: cover;
+    }
+    20%{
+        background: url(capricorn-7617684_640.jpg);
+        background-size: cover;
+    }
+    30%{
+        background: url(gemini-7617685_1280.webp);
+        background-size: cover;
+    }
+    40%{
+        background: url(leo-7617686_640.jpg);
+        background-size: cover;
+    }
+    50%{
+        background: url(libra-7617688_640.jpg);
+        background-size: cover;
+    }
+    60%{
+        background: url(pisces-7617687_640.jpg);
+        background-size: cover;
+    }
+    70%{
+        background: url(sagittarius-7617690_640.jpg);
+        background-size: cover;
+    }
+    85%{
+        background: url(scorpio-7617691_640.jpg);
+        background-size: cover;
+    }
+    90%{
+        background: url(taurus-7617693_640.jpg);
+        background-size: cover;
+    }
+    95%{
+        background: url(th-827361804.jpeg);
+        background-size: cover;
+    }
+    100%{
+        background: url(virgo-7617694_640.jpg);
+        background-size: cover;
+    }
+
+}
+.sidebar header{
+    box-shadow: none;
+}
+.scrollbox{
+    overflow: auto;
+}
+.scrollbox-inner{
+    padding: 10px;
+    margin: 5px;
+    font: 200;
+    font-style: italic;
+    font-size: 20px;
+    font-weight: bold;
+    overflow: auto;
+
+}
+::-webkit-scrollbar{
+    width: 2px;
+    height: 5px;
+    color: yellow;
+}
+::-webkit-scrollbar-thumb{
+    color: yellow;
+    width: 100px;
+
+}
+.scrollbox-inner footer{
+    background: rgb(30, 30, 68);
+    color: white;
+    font-size: 10px;
+    overflow: auto;
+    padding:0 0 0 0;
+    height: 100%;
+    margin: 0;
+    border-radius: 10px;
+    width: 100%;
+
+}
+.scrollbox-inner footer .auteur{
+    padding:5px 2px 0 10px;
+    padding: 5px;
+}
+ footer h2{
+    text-align: center;
+    align-items: center;
+    font-weight: 300;
+    color: #FF7300;
+}
+.bouton{
+    width: 400px;
+    height: 40px;
+    font-size: 30px;
+    font-weight: 600;
+     background: transparent;
+    border-radius: 20px;
+    overflow: hidden;
+    
+}
+button{
+    box-shadow: 0px -0px 0px 0px rgba(143,64,248,.5),0px 0px 0px 0px rgba(39,200,255,.5);
+transition: all .2s;
+overflow: hidden;
+width:1365px;
+
+}
+.bouton::after{
+    content: "";
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(225deg,#27d86c 0%, #26caf8 50%, #c625d0 100%);
+    position: absolute;
+    bottom: 1px;
+    right: 96%;
+    left: 4%;
+    width: 390px;
+    height: 435px;
+    z-index: -1;
+    border-radius: 15px;
+    transition: all .2s;
+    opacity: 0;
+}
+.bouton:hover::after{
+    transform: rotate(150deg);
+}
+.bouton:hover{
+    transform:translate(0,-6px);
+    box-shadow: 10px -10px 40px 0 rgba(143,64,248,.25);
+    background: linear-gradient(225deg,#27d86c 0%, #26caf8 50%, #c625d0 100%);
+}
